@@ -3880,3 +3880,410 @@ input:focus {
 .sf-hidden {
   display: none !important
 }
+
+.learning-path-generator {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 2.4rem;
+  box-shadow: 0 0 0 1px #d1d7dc, 0 2px 4px rgba(0, 0, 0, 0.08);
+  max-width: 134rem;
+  margin: 3.2rem auto 0;
+}
+
+.learning-path-header {
+  margin-bottom: 2.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ud-text-md {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.learning-path-header h2 {
+  margin-bottom: 0.8rem;
+}
+
+.learning-path-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.career-goal-selector,
+.experience-level,
+.time-commitment,
+.learning-preferences {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.ud-select,
+.ud-text-input {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #d1d7dc;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+}
+
+.experience-selector {
+  display: flex;
+  gap: 1.2rem;
+}
+
+@media (max-width: 43.75rem) {
+  .experience-selector {
+    flex-direction: column;
+  }
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.time-slider {
+  flex: 1;
+  height: 0.4rem;
+  background: #d1d7dc;
+  border-radius: 0.4rem;
+  appearance: none;
+}
+
+.time-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: #a435f0;
+  cursor: pointer;
+}
+
+.time-value {
+  min-width: 10rem;
+  font-weight: 700;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.ud-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.ud-checkbox {
+  appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #6a6f73;
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+.ud-checkbox:checked {
+  background-color: #a435f0;
+  border-color: #a435f0;
+}
+
+.ud-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.2rem;
+  width: 0.6rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
+
+.generate-button {
+  align-self: center;
+  margin-top: 1.6rem;
+}
+
+.learning-path-results {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.path-visualization {
+  background-color: #f7f9fa;
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+  min-height: 20rem;
+}
+
+.skill-node-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+}
+
+.recommended-courses,
+.milestone-timeline {
+  margin-top: 2.4rem;
+}
+
+.recommended-courses h3,
+.milestone-timeline h3 {
+  margin-bottom: 1.6rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #d1d7dc;
+}
+
+.course-sequence,
+.timeline-visualization {
+  background-color: #f7f9fa;
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+  min-height: 15rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 37.5rem) {
+  .action-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Banner styles */
+.learning-path-banner {
+  background: linear-gradient(90deg, #a435f0, #8710d8);
+  color: white;
+  border-radius: 0.4rem;
+  padding: 2.4rem;
+  margin-bottom: 3.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-content h3 {
+  margin-bottom: 0.8rem;
+}
+
+.banner-content p {
+  margin-bottom: 1.6rem;
+}
+
+/* Skill nodes */
+.skill-map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.skill-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.skill-node:hover {
+  transform: translateY(-4px);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.skill-node-beginner .skill-icon {
+  background-color: #5624d0;
+}
+
+.skill-node-intermediate .skill-icon {
+  background-color: #1e6055;
+}
+
+.skill-node-advanced .skill-icon {
+  background-color: #73726c;
+}
+
+.skill-name {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Course recommendations */
+.course-recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.recommended-course {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 1px #d1d7dc;
+}
+
+.course-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #5624d0;
+  margin-right: 1.6rem;
+  min-width: 3rem;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-meta {
+  display: flex;
+  gap: 1.6rem;
+  color: #6a6f73;
+  margin: 0.4rem 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.course-match {
+  color: #5624d0;
+  font-weight: 700;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 3.2rem 0;
+}
+
+.timeline-track {
+  position: relative;
+  height: 0.4rem;
+  background-color: #d1d7dc;
+  margin: 4rem 0;
+}
+
+.timeline-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #5624d0;
+  transition: width 1s;
+}
+
+.timeline-milestone {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.milestone-dot {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: #5624d0;
+  position: absolute;
+  top: -0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.milestone-label {
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12rem;
+  text-align: center;
+}
+
+.milestone-week {
+  font-weight: 700;
+  color: #5624d0;
+}
+
+.milestone-title {
+  font-size: 1.2rem;
+}
+
+.timeline-footer {
+  text-align: center;
+  margin-top: 2.4rem;
+  color: #6a6f73;
+}
+
+/* Loading indicator */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  color: #6a6f73;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 43.75rem) {
+  .skill-map {
+    gap: 1.6rem;
+  }
+
+  .skill-node {
+    width: 8rem;
+  }
+
+  .course-meta {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .recommended-course {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-number {
+    margin-bottom: 0.8rem;
+  }
+
+  .milestone-label {
+    width: 9rem;
+    font-size: 1.1rem;
+  }
+}

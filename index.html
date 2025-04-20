@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<link lang=en style>
-<meta charset=utf-8>
-<script
-  type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://www.udemy.com/","potentialAction":[{"@type":"SearchAction","target":"https://www.udemy.com/courses/search?q={search_term_string}","query-input":"required name=search_term_string"},{"@type":"SearchAction","target":"android-app://com.udemy.android/https/www.udemy.com/deeplink?query={search_term_string}","query-input":"required name=search_term_string"}]}</script>
-<title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
-<meta http-equiv=origin-trial
-  content="A8o5T4MyEkRZqLA9WeG2XTFdV5tsX2Prg85xyQ+RL1btVuybB1K/EQ+7JUsPK+J32oBMTnsoF9B4A+qTlL6efgQAAABweyJvcmlnaW4iOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkZlZENtQnV0dG9uTW9kZSIsImV4cGlyeSI6MTc0NDY3NTIwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
-<meta name=referrer content=no-referrer>
-<link rel=icon type=image/png sizes=32x32 href="./images/favicon.png">
-<link rel="stylesheet" href="index.css">
-<meta http-equiv=content-security-policy
-  content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
-<noscript data-n-css></noscript>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset=utf-8>
+  <script
+    type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","url":"https://www.udemy.com/","potentialAction":[{"@type":"SearchAction","target":"https://www.udemy.com/courses/search?q={search_term_string}","query-input":"required name=search_term_string"},{"@type":"SearchAction","target":"android-app://com.udemy.android/https/www.udemy.com/deeplink?query={search_term_string}","query-input":"required name=search_term_string"}]}</script>
+  <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+  <meta http-equiv=origin-trial
+    content="A8o5T4MyEZkRZqLA9WeG2XTFdV5tsX2Prg85xyQ+RL1btVuybB1K/EQ+7JUsPK+J32oBMTnsoF9B4A+qTlL6efgQAAABweyJvcmlnaW4iOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkZlZENtQnV0dG9uTW9kZSIsImV4cGlyeSI6MTc0NDY3NTIwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+  <meta name=referrer content=no-referrer>
+  <link rel=icon type=image/png sizes=32x32 href="./images/favicon.png">
+  <link rel="stylesheet" href="index.css">
+  <meta http-equiv=content-security-policy
+    content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
+  <noscript data-n-css></noscript>
+</head>
 
 <body>
   <div id=__next data-reactroot>
@@ -662,6 +666,95 @@
                   </div>
                 </div>
               </section>
+              <div class="learning-path-generator">
+                <div class="learning-path-header">
+                  <h2 class="ud-heading-serif-xxl">Your AI Learning Journey</h2>
+                  <p class="ud-text-md">Get a customized curriculum based on your goals, experience, and learning style
+                  </p>
+                </div>
+
+                <div class="learning-path-form">
+                  <div class="career-goal-selector">
+                    <label class="ud-heading-sm">What's your career goal?</label>
+                    <select class="ud-select" id="career-goal">
+                      <option>Become a Web Developer</option>
+                      <option>Data Science Career</option>
+                      <option>Business Leadership</option>
+                      <option>Digital Marketing</option>
+                      <option>Other (specify below)</option>
+                    </select>
+                    <input type="text" class="ud-text-input" placeholder="Custom goal..." id="custom-goal">
+                  </div>
+
+                  <div class="experience-level">
+                    <label class="ud-heading-sm">Your current experience level</label>
+                    <div class="experience-selector">
+                      <button class="ud-btn ud-btn-large ud-btn-ghost">Beginner</button>
+                      <button class="ud-btn ud-btn-large ud-btn-ghost">Intermediate</button>
+                      <button class="ud-btn ud-btn-large ud-btn-ghost">Advanced</button>
+                    </div>
+                  </div>
+
+                  <div class="time-commitment">
+                    <label class="ud-heading-sm">Weekly time commitment</label>
+                    <div class="slider-container">
+                      <input type="range" min="1" max="20" value="5" class="time-slider" id="time-slider">
+                      <span class="time-value">5 hours/week</span>
+                    </div>
+                  </div>
+
+                  <div class="learning-preferences">
+                    <label class="ud-heading-sm">Learning preferences</label>
+                    <div class="checkbox-group">
+                      <label class="ud-checkbox-label">
+                        <input type="checkbox" class="ud-checkbox"> Video-based learning
+                      </label>
+                      <label class="ud-checkbox-label">
+                        <input type="checkbox" class="ud-checkbox"> Hands-on projects
+                      </label>
+                      <label class="ud-checkbox-label">
+                        <input type="checkbox" class="ud-checkbox"> Interactive quizzes
+                      </label>
+                      <label class="ud-checkbox-label">
+                        <input type="checkbox" class="ud-checkbox"> Group discussions
+                      </label>
+                    </div>
+                  </div>
+
+                  <button class="ud-btn ud-btn-large ud-btn-primary generate-button ud-heading-sm">
+                    <span class="ud-btn-label">Generate My Learning Path</span>
+                  </button>
+                </div>
+
+                <div class="learning-path-results" style="display: none;">
+                  <div class="path-visualization">
+                    <!-- Interactive skill path visualization would go here -->
+                    <div class="skill-node-container">
+                      <!-- Dynamic nodes would be generated here -->
+                    </div>
+                  </div>
+
+                  <div class="recommended-courses">
+                    <h3 class="ud-heading-lg">Recommended Course Sequence</h3>
+                    <div class="course-sequence">
+                      <!-- Dynamic course recommendations would be loaded here -->
+                    </div>
+                  </div>
+
+                  <div class="milestone-timeline">
+                    <h3 class="ud-heading-lg">Your Learning Timeline</h3>
+                    <div class="timeline-visualization">
+                      <!-- Interactive timeline would be generated here -->
+                    </div>
+                  </div>
+
+                  <div class="action-buttons">
+                    <button class="ud-btn ud-btn-large ud-btn-primary">Save This Learning Path</button>
+                    <button class="ud-btn ud-btn-large ud-btn-ghost">Refine Recommendations</button>
+                    <button class="ud-btn ud-btn-large ud-btn-ghost">Share Path</button>
+                  </div>
+                </div>
+              </div>
               <section class="logged-out-homepage-body_professionals-skills-module__6Usu_">
                 <div class="professional-skills-showcase_professional-skills-unit__n4FBR"
                   data-testid="professional-skills-unit">
